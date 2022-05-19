@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Skill Details</h1>
+
+{% for skill in skills %}
+  <div class="card">
+    <div class="card-content">
+      <p>Skill Level: {{ skill.level }}</p>
+      <p>Human-friendly Description: {{ skill.description }}</p>
+    </div>
+  </div>
+{% endfor %}
+
+{% endblock %}
